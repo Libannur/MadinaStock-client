@@ -25,15 +25,28 @@ export const generateMetadata = async ({ params }) => {
   // Destructure parameters or fetch necessary data here
   const { slug } = params; // Example of accessing dynamic route params
 
+  const getPageTitle = (pageSlug) => {
+    switch (pageSlug) {
+      case 'suppliers':
+        return 'Suppliers - MadinaStock';
+      case 'categories':
+        return 'Categories - MadinaStock';
+      case 'inventory-items':
+        return 'Inventory - MadinaStock';
+      default:
+        return 'MadinaStock - Somali Restaurant Management';
+    }
+  };
+
   return {
-    title: `TEMPLATE - ${slug || 'HOME'}`, // Dynamically set the title using route parameters
-    description: `This is a dynamically generated description for ${slug}.`, // Dynamic description
+    title: getPageTitle(slug), // Proper titles for your restaurant app
+    description: 'MadinaStock - Your authentic Somali restaurant inventory management system. Manage suppliers, categories, and track inventory efficiently.', // Professional description
     // Add other metadata fields as needed, like keywords, open graph tags, etc.
-    keywords: [`${slug}`, 'dynamic', 'page'],
+    keywords: ['restaurant', 'inventory', 'somali', 'stock management', 'suppliers', 'categories'],
     openGraph: {
-      title: `Open Graph Title for ${slug}`,
-      description: `Open Graph Description for ${slug}`,
-      url: `https://yourwebsite.com/${slug}`,
+      title: `MadinaStock - Somali Restaurant Management`,
+      description: 'Authentic Somali restaurant inventory management system for tracking suppliers, categories, and stock levels.',
+      url: 'https://madinastock.com',
     },
   };
 };
