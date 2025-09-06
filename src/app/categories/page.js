@@ -19,7 +19,7 @@ export default function CategoriesPage() {
 
   const pageStyle = {
     minHeight: '100vh',
-    background: 'linear-gradient(135deg, #1a472a 0%, #2d5016 50%, #1a472a 100%)',
+    background: 'linear-gradient(135deg, #03391aff 50%, #51af9e41 50%, #77ac7fff 35%)',
     padding: '40px 0',
   };
 
@@ -65,7 +65,7 @@ export default function CategoriesPage() {
       <Container>
         {/* Header Section */}
         <div style={headerStyle}>
-          <h1 style={titleStyle}>🏷️ Qaybaha - Food Categories 🏷️</h1>
+          <h1 style={titleStyle}>🏷️ Food Categories 🏷️</h1>
           <p style={subtitleStyle}>Organize your authentic Somali ingredients and menu items</p>
           <Link href="/categories/new">
             <Button style={addButtonStyle}>➕ Add New Category</Button>
