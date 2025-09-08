@@ -34,7 +34,7 @@ export const generateMetadata = async ({ params }) => {
       case 'inventory-items':
         return 'Inventory - MadinaStock';
       default:
-        return 'MadinaStock - Somali Restaurant Management';
+        return 'MadinaStock - Madina Restaurant Management';
     }
   };
 
