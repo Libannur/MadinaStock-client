@@ -128,7 +128,7 @@ export default function CategoryForm() {
           <Card.Body style={{ padding: '40px' }}>
             {/* Header */}
             <div style={headerStyle}>
-              <h1 style={titleStyle}>🏷️ Qaybaha Cusub - New Category</h1>
+              <h1 style={titleStyle}>🏷️ New Category</h1>
               <p style={subtitleStyle}>Create a new category for your restaurant inventory</p>
             </div>
 

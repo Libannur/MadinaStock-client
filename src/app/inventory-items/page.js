@@ -119,7 +119,7 @@ export default function InventoryPage() {
       <Container>
         {/* Header Section */}
         <div style={headerStyle}>
-          <h1 style={titleStyle}>📦 Alaabta - Inventory Items 📦</h1>
+          <h1 style={titleStyle}>📦 Inventory Items 📦</h1>
           <p style={subtitleStyle}>Manage your restaurant inventory and track stock levels</p>
           <Link href="/inventory-items/new">
             <Button style={addButtonStyle}>➕ Add New Inventory Item</Button>
